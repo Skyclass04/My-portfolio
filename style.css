@@ -1,0 +1,133 @@
+body {
+    background-image: url('images/background-image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html {
+    font-size: 10px;
+}
+
+.hero {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 9.6rem;
+}
+
+.heading-primary {
+    font-family: "Rubik", serif;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1.2rem 3.0rem;
+    border-radius: 9px; border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+  
+.btn--outline:link,
+.btn--outline:visited {
+  border: 2px solid white;
+  background-color: #39e02a;
+  color: white;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #175a11;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    margin-top: 1.5rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #39e02a;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #39e02a;
+  color: white;
+  border: 2px solid white;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #175a11
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+      justify-content: center; /* Center the navigation on smaller screens */
+    }
+    .nav-items {
+      flex-direction: column; /* Stack the items vertically */
+      gap: 10px; /* Reduce gap between items */
+      align-items: center; /* Center align items horizontally */
+    }
+    .nav-items a {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  }
+  
+  /* Media Query for Tablets and Small Laptops (max-width: 1024px) */
+  @media screen and (max-width: 1024px) {
+    .navbar {
+      justify-content: center; /* Center the navigation for medium-sized screens */
+    }
+    .nav-items {
+      gap: 15px; /* Adjust gap for tablets */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
